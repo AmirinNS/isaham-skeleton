@@ -24,7 +24,12 @@ git clone https://github.com/AmirinNS/isaham-skeleton.git
 ```
 After finished, you can open any text editor such [Visual Code](https://code.visualstudio.com) or [Sublime](https://www.sublimetext.com)
 
-Noted that you can only add static files such as images, css and js into static folder. You can't delete files that already exist in this skeleton. Any modification will be ignored and may lead to error during integration with actual server
+Noted that you can only add static files such as images, css and js into static folder and html files to views folder. You can't delete files that already exist in this skeleton. Any modification will be ignored and may lead to error during integration with actual server
+
+Run your server by executing these command
+```bash
+python server.py
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
