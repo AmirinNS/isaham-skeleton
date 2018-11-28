@@ -1,0 +1,65 @@
+<!-- DO NOT EDIT -->
+<!-- ANY MODIFICATION WILL BE IGNORED -->
+<!-- LINK PROVIDED HERE ARE NOT AVAILABLE ON LOCAL DEVELOPMENT -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #04871e;">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<a href="/"><img src="/img/isaham-white.png" width="30" height="30" class="d-inline-block align-top" alt="iSaham"></a>
+<a class="navbar-brand" href="/"></a>
+<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+<form class="form-inline mr-auto my-2 my-lg-0">
+%include views/search.html
+</form>
+<ul class="navbar-nav mt-2 mt-lg-0">
+% if username and username != "Login":
+<li class="nav-item">
+<a class="nav-link" href="/portfolio" style="color: white;">
+<i class="fas fa-chart-line"></i> Portfolio
+</a>
+</li>
+% end
+<li class="nav-item active">
+% if username and username != "Login":
+<a class="nav-link" href="/profile" style="color: white;">
+<i class="fas fa-user-circle"></i> {{username}}
+<span class="sr-only">(current)</span>
+</a>
+% else:
+<a class="nav-link" href="/signin" style="color: white;">
+Log in
+<span class="sr-only">(current)</span>
+</a>
+% end
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+Screeners
+</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="/all-screeners">List all screeners</a>
+<div class="dropdown-divider"></div>
+% for i,s in enumerate(menu['screeners']):
+<a class="dropdown-item" href="/screener/{{s[0]}}">{{s[1]}}</a>
+% end
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="/all-screeners">View more</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+Sectors
+</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="/all-sectors">List all sectors</a>
+<div class="dropdown-divider"></div>
+% for se in menu['sectors']:
+<a class="dropdown-item" href="/sector/{{se[0]}}">{{se[1]}}</a>
+% end
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="/all-sectors">View more</a>
+</div>
+</li>
+</ul>
+</div>
+</nav>
