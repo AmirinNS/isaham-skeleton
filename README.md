@@ -26,6 +26,12 @@ After finished, you can open any text editor such [Visual Code](https://code.vis
 
 Noted that all pages must be created within pages folder and you must create a specific folder for you project. You can't delete files that already exist in this skeleton. Any modification will be ignored and may lead to error during integration with actual server
 
+Run the server and open the browser
+
+```bash
+python server.py
+```
+
 ## Advance Usage
 
 You can explore React JS in this skeleton. Just head to react folder to play around. Install the dependency first. Oh we assume you already know what is npm is 😉
