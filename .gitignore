@@ -1,0 +1,10 @@
+# NPM Package
+node_modules
+
+## Parcel
+# Parcel Cache
+.cache
+# Production code
+dist
+build
+
