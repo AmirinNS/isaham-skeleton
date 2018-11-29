@@ -1,0 +1,32 @@
+{
+  "name": "isaham-skeleton",
+  "version": "1.0.0",
+  "description": "iSaham Skeleton is a mini framework for developing website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "parcel watch react/index.html -d build/ --public-url /build/",
+    "build": "parcel build react/index.html -d dist/ --public-url /dist/ --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmirinNS/isaham-skeleton.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AmirinNS/isaham-skeleton/issues"
+  },
+  "homepage": "https://github.com/AmirinNS/isaham-skeleton#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.10.3"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
