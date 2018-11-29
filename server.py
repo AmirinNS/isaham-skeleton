@@ -5,7 +5,7 @@ from bottle import *
 @route('/')
 def index():
     return template(
-        'views/index.html', 
+        'pages/new/index.html', 
         username="Login", 
         title="Home", 
         description="Home Page", 
